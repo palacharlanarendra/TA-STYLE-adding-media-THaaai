@@ -57,15 +57,22 @@ body{
 }
 .common-heading{
 	font-size: 40px;
+	font-weight: 500;
+	color:#393939;
 }
+.white-heading{
+	color:white;
+}
+
 /* general styles */
 *,*::after,*::before{
     box-sizing: border-box;
 }
 .box-container{
     max-width:1460px;
-    border:2px solid rgb(151, 23, 45);
+    /* border:2px solid rgb(151, 23, 45); */
 	margin: 0px auto;
+	padding: 0px 20px;
 }
 .header-bar{
 	width:1460px;
@@ -88,8 +95,15 @@ body{
 .height{
 	height: 500px;
 }
-
-
+.padding-offset{
+	padding:100px 0 100px 0;
+}
+.padding-top{
+	padding:100px 0 0 0;
+}
+.padding-bottom{
+	padding:100px 0 150px 0;
+}
 /* header section */
 .nav-bar{
 	width: calc(100% - 300px);
@@ -101,9 +115,9 @@ body{
 	margin-left:30px;
 }
 .brand-name{
-	font-size: 30px;
+	font-size: 35px;
 	color:white;
-	font-weight:700;
+	font-weight:600;
 }
 /* hero section styles */
 .hero-img{
@@ -111,6 +125,9 @@ body{
     height:1000px;
     background-size:cover;
     margin-top:-10px;
+}
+.offset-btn{
+	margin-left:40px!important;
 }
 .btn{
 	padding:25px 30px;
@@ -137,10 +154,10 @@ body{
 	font-weight:600;
 }
 .offset{
-	padding: 350px 0px 180px 0px;
+	padding: 350px 0px 200px 0px;
 }
 .hero-heading{
-	font-size: 50px;
+	font-size: 55px;
 	font-weight: 500;
 	color:white;
 	margin:30px 0 20px 0;
@@ -152,16 +169,17 @@ body{
 }
 .video{
 	flex: 0 1 40%;
-	align-self: flex-start;
+	align-self:center;
 }
 .btn-1{
 	padding:25px 50px;
 }
 .para{
-	flex:0 1 40%;
+	flex:0 1 45%;
 	margin-left:30px;
 	font-weight:600;
 	color:white;
+	font-size:18px;
 }
 /* introduction section styles */
 .introduce-section{
@@ -175,8 +193,8 @@ body{
 	flex:0 1 30%;
 }
 .square-group i{
-	color:rgb(192, 192, 192);
-	margin:10px 0px;
+	color:#d8d8d8;
+	margin:20px 0px 60px 0px;
 	margin-right:4px;
 }
 .introduction-img{
@@ -185,7 +203,7 @@ body{
 	height:500px;
 	background-size:100% 90%;
 	flex:0 1 30%;
-	border: 2px solid green;
+	/* border: 2px solid green; */
 }
 .introduce-section .para{
 	font-size:20px;
@@ -232,8 +250,6 @@ body{
 /* blog section styles */
 .blog-section{
 	background-color:#efefef;
-	padding:100px 0px;
-	
 }
 .blog-image{
 	flex:0 1 45%;
@@ -281,8 +297,10 @@ body{
 	padding:25px 55px;
 }
 .col{
-	margin-top:40px;
 	background-color:#efefef;
+}
+.col-margin{
+	margin-top:30px;
 }
 .box{
 	background-color: white;
@@ -302,18 +320,17 @@ body{
 }
 .btn-3{
 	padding:25px 70px;
+	border:none;
 }
-.round{
-	border-radius:50%;
-}
+
 .text-area{
-	flex:0 1 100%;
+	/* flex:0 1 100%; */
 	height:150px;
 	margin-bottom: 20px;
 }
-.form-detail{
-	flex:0 1 65%;
-	border:2px solid red;
+.form .form-detail{
+	flex:0 1 40%;
+	/* border:2px solid red; */
 }
 .form-detail .name,.form-detail .email,.form-detail .phone,.form-detail .number{
 	flex:0 1 48%;
@@ -321,26 +338,43 @@ body{
 	border-radius: 5px;
 	margin-bottom: 20px;
 }
-
+.contact-section input,.contact-section .text-area{
+	border:none;
+	font-size: 20px;
+	padding-left:10px;
+	color:grey;
+}
+.contact-section input::placeholder{
+	font-size: 20px;
+	
+}
+.round{
+	border-radius:50%;
+	flex:0 1 25%;
+	
+}
 /* footer styles */
 .box-3-1{
 	flex:0 1 35%;
 }
 .big-box{
-	flex:0 1 55%;
+	flex:0 1 60%;
 }
 .box-3-2,.box-3-3,.box-3-4{
-	flex:0 1 20%;
+	flex:0 1 30%;
 }
 .line-new{
 	width:100%;
+	height:0.5px;
+	background-color: rgb(54, 54, 54);
+	margin:100px 0px 50px 0px;
 }
 .footer-nav{
-	width: calc(100% - 800px);
-	border:2px solid green;
+	width: calc(100% - 1000px);
+	/* border:2px solid green; */
 }
 .footer{
-	padding:180px 0px 160px 0px;
+	padding:150px 0px 80px 0px;
 	background:linear-gradient(to right,#3e3e3e,#030303 );
 }
 .box-3-1,.box-3-2,.box-3-3,.box-3-4{
@@ -348,21 +382,28 @@ body{
 	align-self: stretch;
 }
 .white-para{
-	color:white;
+	color:#d5d5d5;
 	margin:0px;
 }
 .footer a {
 	text-decoration: none;
-	color:white;
+	color:#d5d5d5;
+	font-size: 20px;
+	font-weight:500;
+	line-height: 1.5;
 }
 .footer address{
 	color:white;
+	line-height:1.5;
 }
 .footer .common-heading{
 	color:white;
-	font-weight:700;
-	padding-bottom:30px;
+	font-weight:500;
+	padding-bottom:20px;
 }
 .footer .copyright{
 	color:white;
+}
+.copyright li ,.copyright p{
+	color:#d5d5d5;
 }
